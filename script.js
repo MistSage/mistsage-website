@@ -214,14 +214,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Parallax effect for hero section
     const hero = document.querySelector('.hero');
-    const heroImage = document.querySelector('.cloud-illustration');
+    const cloudIllustration = document.querySelector('.cloud-illustration');
     
     window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
         const rate = scrolled * -0.5;
         
-        if (heroImage && scrolled < window.innerHeight) {
-            heroImage.style.transform = `translateY(${rate}px)`;
+        if (cloudIllustration && scrolled < window.innerHeight) {
+            cloudIllustration.style.transform = `translateY(${rate}px)`;
         }
     });
 
